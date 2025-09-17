@@ -16,7 +16,7 @@ export default async function OurTeamPage() {
 				<p className={styles.description}>The OTSU is led by student executives and a board of directors who are elected annually, and supported by a team of full-time staff.</p>
 				<section className={styles.executivesSection}>
 					<h2 className={styles.sectionTitle}>Executives</h2>
-					<p className={styles.description}>Our elected student leaders guiding the union's vision and operations.</p>
+					<p className={styles.description}>Our elected student leaders guiding the {"union's"} vision and operations.</p>
 					<div className={styles.teamGrid}>
 						{executives.map((exec, index) => (
 							<div key={exec.name} className={styles.member} style={{ animationDelay: `${index * 0.1}s` }}>
