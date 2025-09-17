@@ -1,0 +1,32 @@
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+
+	backdrop-filter: blur(0.5rem);
+	background-color: rgba(255, 255, 255, 0.66);
+	box-shadow: var(--shadow);
+}
+
+.navContainer {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	position: relative;
+	z-index: 9999;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+.logoMenuContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logoContainer {
+	display: flex;
+}

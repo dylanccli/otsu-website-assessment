@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "NumberFont";
+	src: url("/fonts/montserrat.ttf") format("truetype");
+	unicode-range: U+30-39;
+}
+
+@font-face {
+	font-family: "Upbolters New";
+	src: url("/fonts/upbolters-new-regular.otf") format("opentype");
+	font-style: regular;
+}
+
+@font-face {
+	font-family: "Upbolters New";
+	src: url("/fonts/upbolters-new-italic.otf") format("opentype");
+	font-style: italic;
+}
+
+:root {
+	--max-width: 1200px;
+
+	/* brand colours */
+	--colour-primary: #0077ca;
+	--colour-secondary: #003c71;
+
+	/* extra colours */
+	--colour-grey: #d8dee2;
+
+	/* text colours */
+	--colour-heading: #101828;
+	--colour-paragraph: #475467;
+
+	/* shadows */
+	--shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+		0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+
+	--section-padding: 6rem 1rem;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100vw;
+}
+
+body {
+	color: var(--colour-paragraph);
+	font-family: "NumberFont", var(--font-catamaran), sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+	letter-spacing: -0.02rem;
+	color: var(--colour-heading);
+}
+
+p,
+a,
+li,
+label,
+input,
+select,
+td,
+th,
+button {
+	font-family: inherit;
+	color: inherit;
+	font-size: inherit;
+	letter-spacing: 0.02rem;
+	line-height: 1.5;
+}
+
+a {
+	text-underline-offset: 0.3rem;
+	font-weight: bold;
+
+	&:hover {
+		color: var(--colour-primary);
+	}
+}
