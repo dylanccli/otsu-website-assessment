@@ -1,9 +1,3 @@
-# OTSU Web Developer Assessment
-
-> This project contains a small subset of the OTSU website. Candidates will build a responsive, accessible "Our Team" page using the provided brand assets.
-
----
-
 ## Tech stack
 
 - `Next.js 14 (app router)`
@@ -12,48 +6,14 @@
 - `Node 18+`
 - `npm` package manager
 
-## Project setup
-
-- `npm install` (you may safely ignore any warnings during installation)
-- `npm run dev`
-- `npm run build` && `npm run start`
-- `npm run lint` (should finish with **'No ESLint warnings or errors'**)
-
-## Candidate task — "Our Team" page
-
-Build a web page that displays employees' information grouped into Executives, Board of Directors, and Staff sections.
-
-### Information provided
-
-- Header and Footer components (see `app/layout.js`)
-- Data for 4 Executives (images, full names, positions) (see `app/employees.js`)
-- Data for 7 Board of Directors (images, full names, positions) (see `app/employees.js`)
-- Data for 14 Staff (images, full names, positions) (see `app/employees.js`)
-- OTSU brand colours, fonts, and images available in the repo
-- Next.js Documentation (App Router): https://nextjs.org/docs
-- You may use any additional packages/libraries you prefer
-
-### Requirements
-
-- Serve the webpage at `/` url route (see `app/page.js`)
-  - Bonus points: Implement the page at `/our-team` or `/contact-us/our-team` url route
-- Display all employees with their image, full name, and position grouped into Executives, Board of Directors, and Staff sections
-- Implement a responsive layout that works on mobile and desktop
-- Use the provided brand colours and assets where necessary
-- You may use any CSS implementation you prefer (e.g. raw CSS, CSS Modules, Tailwind CSS, etc.)
-- All images include meaningful `alt` text
-- Use semantic HTML and proper heading structure (`h1`, `h2`, ...)
-- Should run on the latest versions of Chrome, Firefox, and Safari
-
-### Deliverables & submission
-
-- A working Next.js project submitted either as a GitHub repository or a ZIP file
-- Include a short summary anywhere in this file (`README.md`) describing your approach and any important decisions or trade-offs
-
 ## Summary
 
-I implemented the "Our Team" page using Next.js App Router, displaying employees grouped into Executives, Board of Directors, and Staff sections. Each member card includes a circular profile image, name, and title, with meaningful alt text for accessibility. The layout uses CSS Grid for responsiveness, adapting from single-column on mobile to multi-column on desktop. I chose CSS Modules for styling to keep components scoped and maintainable. No external libraries were added beyond what's provided, ensuring a lightweight implementation. The page passes ESLint checks and uses semantic HTML with proper heading hierarchy.
+This is the link to the website: https://otsu-website-assessment.vercel.app/
 
----
+I built the "Our Team" page using the Next.js App Router, with employees grouped into Executives, Board of Directors, and Staff. Each member is displayed in a reusable employee card that includes their profile image, full name, and title. I also added `alt` text to support accessibility.  
 
-Thank you for taking the time to complete and submit this assessment.
+For the layout, I designed it mobile-first using CSS Grid so it flows as a single column on smaller screens and expands into multiple columns on larger screens. This ensures the page is fully responsive across desktop and mobile. For styling, I used CSS Modules to keep everything maintainable.  
+
+To give the project more of a finished website feel, I also added some placeholder navigation buttons in the header. While they don’t link anywhere, they help the page look more complete. I also matched some of the colours directly from the official OTSU website so that the design felt consistent with their brand identity.  
+
+Finally, I kept the implementation lightweight by avoiding unnecessary external libraries, ensured semantic HTML with proper heading structure, and confirmed the page passed all ESLint checks. Overall, my goal was to make the page responsive, accessible, and on-brand while keeping the codebase clean and easy to maintain.
