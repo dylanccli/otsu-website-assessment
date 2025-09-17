@@ -18,8 +18,8 @@ export default async function OurTeamPage() {
 					<h2 className={styles.sectionTitle}>Executives</h2>
 					<p className={styles.description}>Our elected student leaders guiding the union's vision and operations.</p>
 					<div className={styles.teamGrid}>
-						{executives.map((exec) => (
-							<div key={exec.name} className={styles.member}>
+						{executives.map((exec, index) => (
+							<div key={exec.name} className={styles.member} style={{ animationDelay: `${index * 0.1}s` }}>
 								<Image
 									src={exec.image}
 									alt={`Photo of ${exec.name}, ${exec.title}`}
@@ -37,8 +37,8 @@ export default async function OurTeamPage() {
 						<h2 className={styles.sectionTitle}>Board of Directors</h2>
 						<p className={styles.description}>Faculty representatives ensuring academic excellence and student interests.</p>
 						<div className={styles.teamGrid}>
-							{directors.map((dir) => (
-								<div key={dir.name} className={`${styles.member} ${styles.boardMember}`}>
+							{directors.map((dir, index) => (
+								<div key={dir.name} className={`${styles.member} ${styles.boardMember}`} style={{ animationDelay: `${index * 0.1}s` }}>
 									<Image
 										src={dir.image}
 										alt={`Photo of ${dir.name}, ${dir.title}`}
@@ -56,8 +56,8 @@ export default async function OurTeamPage() {
 					<h2 className={styles.sectionTitle}>Staff</h2>
 					<p className={styles.description}>Dedicated professionals providing essential services and support.</p>
 					<div className={styles.teamGrid}>
-						{staff.map((stf) => (
-							<div key={stf.name} className={styles.member}>
+						{staff.map((stf, index) => (
+							<div key={stf.name} className={styles.member} style={{ animationDelay: `${index * 0.1}s` }}>
 								<Image
 									src={stf.image}
 									alt={`Photo of ${stf.name}, ${stf.title}`}

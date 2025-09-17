@@ -16,6 +16,9 @@ export const metadata = {
 	},
 	description:
 		"The OTSU is the voice and vision of the Ontario Tech student body. We provide services and amenities that foster friendship, promote development, and improve student life.",
+	icons: {
+		icon: '/favicon.ico',
+	},
 };
 
 export default async function RootLayout({ children }) {

@@ -31,6 +31,23 @@
 	display: flex;
 }
 
+.hamburger {
+	display: none;
+	flex-direction: column;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.5rem;
+	gap: 0.25rem;
+}
+
+.hamburgerLine {
+	width: 25px;
+	height: 3px;
+	background: black;
+	transition: 0.3s;
+}
+
 .menu {
 	display: flex;
 	list-style: none;
@@ -38,6 +55,21 @@
 	padding: 0;
 	gap: 2.5rem;
 	align-items: center;
+}
+
+.menuOpen {
+	display: flex !important;
+	flex-direction: column;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: white;
+	box-shadow: var(--shadow);
+	padding: 1rem;
+	gap: 1rem;
+	border-radius: 4px;
+	min-width: 200px;
+	z-index: 1000;
 }
 
 .navLink {
@@ -50,5 +82,15 @@
 
 	&:hover {
 		color: #003c71;
+	}
+}
+
+@media (max-width: 768px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.menu {
+		display: none;
 	}
 }
