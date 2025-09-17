@@ -51,6 +51,7 @@ body {
 body {
 	color: var(--colour-paragraph);
 	font-family: "NumberFont", var(--font-catamaran), sans-serif;
+	background-color: #ecf2f6;
 }
 
 h1 {
@@ -105,4 +106,8 @@ a {
 	&:hover {
 		color: var(--colour-primary);
 	}
+}
+
+footer {
+	background: white;
 }

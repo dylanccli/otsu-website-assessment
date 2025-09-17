@@ -12,9 +12,11 @@ export default async function OurTeamPage() {
 	return (
 		<main>
 			<section className={styles.teamSection}>
-				<h1>Our Team</h1>
-				<section>
-					<h2>Executives</h2>
+				<h1>Meet Our Team</h1>
+				<p className={styles.description}>The OTSU is led by student executives and a board of directors who are elected annually, and supported by a team of full-time staff.</p>
+				<section className={styles.executivesSection}>
+					<h2 className={styles.sectionTitle}>Executives</h2>
+					<p className={styles.description}>Our elected student leaders guiding the union's vision and operations.</p>
 					<div className={styles.teamGrid}>
 						{executives.map((exec) => (
 							<div key={exec.name} className={styles.member}>
@@ -30,25 +32,29 @@ export default async function OurTeamPage() {
 						))}
 					</div>
 				</section>
-				<section>
-					<h2>Board of Directors</h2>
-					<div className={styles.teamGrid}>
-						{directors.map((dir) => (
-							<div key={dir.name} className={styles.member}>
-								<Image
-									src={dir.image}
-									alt={`Photo of ${dir.name}, ${dir.title}`}
-									width={150}
-									height={150}
-								/>
-								<h3>{dir.name}</h3>
-								<p>{dir.title}</p>
-							</div>
-						))}
+				<section className={styles.boardSection}>
+					<div className={styles.content}>
+						<h2 className={styles.sectionTitle}>Board of Directors</h2>
+						<p className={styles.description}>Faculty representatives ensuring academic excellence and student interests.</p>
+						<div className={styles.teamGrid}>
+							{directors.map((dir) => (
+								<div key={dir.name} className={`${styles.member} ${styles.boardMember}`}>
+									<Image
+										src={dir.image}
+										alt={`Photo of ${dir.name}, ${dir.title}`}
+										width={150}
+										height={150}
+									/>
+									<h3>{dir.name}</h3>
+									<p>{dir.title}</p>
+								</div>
+							))}
+						</div>
 					</div>
 				</section>
-				<section>
-					<h2>Staff</h2>
+				<section className={styles.staffSection}>
+					<h2 className={styles.sectionTitle}>Staff</h2>
+					<p className={styles.description}>Dedicated professionals providing essential services and support.</p>
 					<div className={styles.teamGrid}>
 						{staff.map((stf) => (
 							<div key={stf.name} className={styles.member}>
